@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/Homepage.css">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="/images/Website_logo.jpeg" alt="Chef Connect Logo" class="logo-img">
+                <h1 class="logo-text"><span>Chef</span>Connect</h1>
+            </div>
+        </div>
+        <i class="menu-toggle material-symbols-outlined">menu</i>
+        <ul class="nav">
+            <li><a href="homepage.html">Home</a></li>
+            <li>
+                <a href="#">Cuisines</a>
+                <ul>
+                    <li><a href="#">American</a></li>
+                    <li><a href="#">Italian</a></li>
+                    <li><a href="#">Mexican</a></li>
+                    <li><a href="#">Indian</a></li>
+                    <li><a href="#">Lebanese</a></li>
+                </ul>
+            </li>
+            <li class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="searchButton">Search</button>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="material-symbols-outlined">person</span>Profile<span class="material-symbols-outlined">keyboard_arrow_down</span>
+                </a>
+                <ul>
+                    <li><a href="Dashboard.html">Dashboard</a></li>
+                    <li><a href="Login_Page.html" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="auth-links">
+            <li><a href="Login_Page.html"  target="_blank">Login</a></li>
+            <li><a href="REGISTRATION_PAGE.html"  target="_blank">Register</a></li>
+            <li><a href="blogg.html">Blog</a></li>
+        </ul>
+    </header>
+    <div class="welcome-message">
+        <h1>Welcome to Chef Connect.</h1>
+        <h4>Bringing People Together, One Recipe at a Time!</h4>
+    </div>
+    <h2>Recipes you would like to try out</h2>
+    <div class="recipes-container">
+        <div class="recipes">
+            <a href="Trecipe_2.html" target="_blank" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/butterchicken.jpeg" alt="butterchicken">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Butter Chicken</h1>
+                        <p>Butter chicken, traditionally known as murgh makhani, is an Indian dish originating in Delhi. 
+                            It is a type of curry made from chicken with a spiced tomato and butter sauce. Its sauce is known for its rich texture. 
+                            It is similar to chicken tikka masala, which uses a tomato paste.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="recipes">
+            <a href="Trecipe_3.html" target="_blank" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/dessert.jpeg" alt="dessert">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Mini Oreo Cheesecake</h1>
+                        <p>These Mini Oreo Cheesecakes are a super quick and easy cheesecake dessert. 
+                            They are made with an Oreo cookie bottom, a creamy Oreo cheesecake filling and are topped with sweetened sour cream and more Oreo cookies. 
+                            These little Oreo cheesecake bites are basically not so mini oreo cookies filled with cheesecake! 
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="recipes">
+            <a href="Trecipe_5.html" target="_blank" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/Shakes.jpg" alt="Shakes">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Strawberry Blueberry Smoothie</h1>
+                        <p>Extra creamy and oh so fresh, this Strawberry Blueberry Smoothie is bursting with sweet and fruity flavor. 
+                            The combination of berries perfectly with the tang of greek yogurt for a thick blend that is just sweet enough.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="recipes">
+            <a href="Trecipe_4.html" target="_blank" class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="/images/kebab.jpeg" alt="kebab">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>Kebab</h1>
+                        <p>Kebab, kabob, kebap, or kabab is roasted meat that originates from the Middle East. 
+                            Many variants of the category are popular around the world, including the skewered shish kebab and the doner kebab with bread.
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </footer>
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>

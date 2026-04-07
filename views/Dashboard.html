@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/Dashboard.css">
+</head>
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <div class="profile">
+                <h1>Welcome back</h1>
+                <img src="/images/Person_Avatar.jpg" alt="UserProfilePic">
+                <h2>User Name</h2>
+            </div>
+            <div class="choices">
+                <ul>
+                    <li><img src="/images/Home_Icon.png" alt="HomeIcon"><a href="Homepage.html">Home</a></li>
+                    <li><img src="/images/Favorite_Icon.png" alt="FavouritesIcon"><a href="FavoritesPage.html" target="_blank">Favourites</a></li>
+                    <li><img src="/images/Share_Icon.jpg" alt="ShareIcon"><a href="MyRecipe.html" target="_blank">My Recipes</a></li>
+                    <li><img src="/images/Notification_Icon.png" alt="NotificationIcon"><a href="#" onclick="notifyFunction()">Notifications</a></li>
+                    <p id="demo"></p>
+                    <li><img src="/images/Settings_Icon.png" alt="SettingsIcon"><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <header class="search">
+                <input type="text" placeholder="Search your favourites and saved recipes...">
+                <button name="searchButton">Search</button>
+            </header>
+            <div class="trending">
+                <p>Top Recommendations for you</p>
+                <div class="topRecommendations">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/images/StrawberryShortcake.jpg" alt="Strawberry Shortcake">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>Strawberry Shortcake</h1> 
+                                <p>Shortcake generally refers to a dessert with a crumbly scone-like texture. One of the most popular strawberry shortcake, is typically served with whipped cream. 
+                                    Other variations common are blackberry and clotted cream shortcake and lemon berry shortcake, which is served with lemon curd in place of cream.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="/images/White_Bean_Veggie_Salad.jpeg" alt="White Bean Veggie Salad">
+                            </div>
+                            <div class="flip-card-back">
+                                <h1>White Bean Veggie Salad</h1> 
+                                <p>White bean and veggie salad recipe is a protein packed recipe for fresh garden tomatoes and cucumbers! Great for an easy no-cook lunch or dinner. 
+                                    Serve with a thick slice of homemade sourdough and you have got a satisfying meal ready in about 5 minutes. High fiber, gluten free, vegan.
+                                </p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <p>Quick Notes</p>
+            <textarea placeholder="Write notes here..."></textarea>
+        </div>    
+    </div>
+    <script>
+        function notifyFunction() {
+            var notifications = false;
+                
+            var notify;
+            if (notifications) {
+                notify = "You have New Notification!";
+            } else {
+                notify = "No Notifications!";
+            }
+            document.getElementById("demo").innerHTML = notify;
+        }
+    </script>
+</body>
+</html>

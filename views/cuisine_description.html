@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Connect</title>
+    <link rel="stylesheet" href="/css/Srecipe.css">
+</head>
+<body>
+    <header>
+        <h1>Explore World Cuisines</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Tips_and_hacks.html">Tips and Hacks</a></li>
+                <li><a href="Cooking_techniques.html">Cooking Techniques</a></li>
+                <li><a href="blogg.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2>World Cuisines</h2>
+        <div class="cuisine-item">
+            <h3>American Cuisine</h3>
+            <img src="/images/american.jpg" alt="American Cuisine" width="250px" height="250px">
+            <p>American cuisine is diverse and influenced by various cultures, featuring dishes like burgers, barbecue, and apple pie. Regional specialties include Southern fried chicken, New England clam chowder, and Tex-Mex fusion.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>Indian Cuisine</h3>
+            <img src="/images/indian.jpg" alt="Indian Cuisine" width="250px" height="250px">
+            <p>Indian cuisine is known for its rich spices and flavors, with staples like curry, biryani, and naan. Regional variations include North Indian tandoori and South Indian dosa, often featuring vegetarian and non-vegetarian dishes.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>Italian Cuisine</h3>
+            <img src="/images/italian.jpg" alt="Italian Cuisine" width="250px" height="250px">
+            <p>Italian cuisine is celebrated for its simplicity and fresh ingredients, including pasta, pizza, and risotto. Regional differences highlight rich sauces in the north and olive oil-based dishes in the south.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>British Cuisine</h3>
+            <img src="/images/british.jpg" alt="British Cuisine" width="250px" height="250px">
+            <p>British cuisine includes traditional dishes like fish and chips, roast beef, and shepherd’s pie. It also features hearty breakfasts, afternoon tea, and a growing trend towards modern, diverse flavors.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>Mexican Cuisine</h3>
+            <img src="/images/mexican.jpg" alt="Mexican Cuisine" width="250px" height="250px">
+            <p>Mexican cuisine is vibrant and varied, known for its use of chili peppers, corn, and beans. Popular dishes include tacos, enchiladas, and mole, often accompanied by fresh salsas and guacamole.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>Lebanese Cuisine</h3>
+            <img src="/images/lebanese.jpg" alt="Lebanese Cuisine" width="250px" height="250px">
+            <p>Lebanese cuisine emphasizes fresh, healthy ingredients with dishes like hummus, tabbouleh, and kebabs. It often features mezze, a variety of small dishes, and uses a lot of olive oil, garlic, and lemon.</p>
+        </div>
+        <div class="cuisine-item">
+            <h3>Pakistani Cuisine</h3>
+            <img src="/images/pakistani.jpg" alt="Pakistani Cuisine" width="250px" height="250px">
+            <p>Pakistani cuisine blends Middle Eastern and South Asian influences, featuring dishes like biryani, kebabs, and karahi. It is known for its rich flavors, extensive use of spices, and both meat and vegetarian options.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            const menuIcon = document.querySelector('.menu-icon');
+            nav.classList.toggle('show');
+            menuIcon.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

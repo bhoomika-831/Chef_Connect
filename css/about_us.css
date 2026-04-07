@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    color: #333;
+}
+
+h1, h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+    color: #414040;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 40px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.team-member {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Header Section */
+header {
+    position: relative;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header .welcome-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+header .welcome-box p {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.home-button a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #e84c61;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.home-button a:hover {
+    background-color: #d43b4e;
+}

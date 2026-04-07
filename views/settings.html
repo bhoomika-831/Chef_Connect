@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="/css/settings.css">
+</head>
+<body>
+    <div class="content">
+        <div class="sidebar">
+            <div class="profile">
+                <h1>Welcome back</h1>
+                <img src="/images/Person_Avatar.jpg" alt="UserProfilePic">
+                <h2>User Name</h2>
+            </div>
+            <div class="choices">
+                <ul>
+                    <li><img src="/images/Home_Icon.png" alt="HomeIcon"><a href="Dashboard.html">Home</a></li>
+                    <li><img src="/images/Favorite_Icon.png" alt="FavouritesIcon"><a href="FavoritesPage.html" target="_blank">Favourites</a></li>
+                    <li><img src="/images/Share_Icon.jpg" alt="ShareIcon"><a href="MyRecipe.html" target="_blank">My Recipes</a></li>
+                    <li><img src="/images/Notification_Icon.png" alt="NotificationIcon"><a href="#" onclick="notifyFunction()">Notifications</a></li>
+                    <p id="demo"></p>
+                    <li><img src="/images/Settings_Icon.png" alt="SettingsIcon"><a href="settings.html">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <h2>Settings</h2>
+            <form>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="CurrentUsername">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="user@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" name="current-password" placeholder="Enter current password">
+                </div>
+                <div class="form-group">
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="Enter new password">
+                </div>
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function notifyFunction() {
+            var notifications = false;
+                
+            var notify;
+            if (notifications) {
+                notify = "You have New Notification!";
+            } else {
+                notify = "No Notifications!";
+            }
+            document.getElementById("demo").innerHTML = notify;
+        }
+    </script>
+</body>
+</html>

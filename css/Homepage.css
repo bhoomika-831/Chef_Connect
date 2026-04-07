@@ -1,0 +1,299 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    background-image: url('/images/homepage_BG.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 66px;
+    margin-right: 10px;
+}
+
+header .logo-text {
+    color: white;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+header .logo-text span {
+    color: green;
+}
+
+header .menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav li a {
+    display: block;
+    padding: 13px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.2s;
+}
+
+.nav li a:hover {
+    background: grey;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    width: 150px;
+}
+
+.nav li ul li a {
+    padding: 10px;
+    color: black;
+    background: white;
+}
+
+.nav li ul li a.logout {
+    color: red;
+}
+
+.nav li ul li a:hover {
+    background: grey;
+}
+
+header ul li input[type="text"] {
+    margin-top: 12px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+header ul li button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: grey;
+    color: white;
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.welcome-message {
+    text-align: center;
+    margin: 30px;
+    color: black;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.welcome-message h1 {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    animation: bounce 2s infinite;
+}
+
+.welcome-message h4 {
+    font-size: 20px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    margin: 0;
+    animation: slideIn 1.5s ease-out;
+}
+
+h2 {
+    font-size: 24px; 
+    font-family: cursive;
+    color: darkred;
+    text-align: center; 
+    margin: 20px 0;
+    font-weight: bolder;
+    text-transform: uppercase; 
+}
+
+.recipes-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipes {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img {
+    width: 105%;
+    height: 150%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: plum;
+    width: 105%;
+    height: 150%;
+    color: black;
+    transform: rotateY(180deg);
+    font-size: medium;
+    font-family: cursive;
+    border-radius: 10px;
+}
+
+.flip-card-back p {
+    color: black;
+    font-size: medium;
+    font-family: Cambria;
+    margin: 40px;
+}
+
+.auth-links {
+    display: flex;
+    list-style: none;
+    margin: 5;
+    padding: 10;
+}
+
+.auth-links li {
+    margin-right: 15px;
+}
+
+.auth-links a {
+    display: inline-block;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.3s;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 150px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: grey;
+}

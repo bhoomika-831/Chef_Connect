@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Connect Blog</title>
+    <link rel="stylesheet" href="/css/blogg.css"> 
+</head>
+<body>
+    <header>
+        <h1>Chef Connect</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Tips_and_hacks.html">Tips and Hacks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="recipe-layout">
+            <div class="side-link">
+                <a href="Cooking_techniques.html" target="_blank">
+                    <img src="/images/cookingtech.jpg" alt="Cooking techniques" width="250px" height="250px">
+                    <span class="link-text">Cooking Techniques</span>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <h2>Trending Recipe</h2>
+                <a href="Trecipe_1.html" target="_blank" class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="/images/recipe1.jpg" alt="Trending Recipe" width="250px" height="250px">
+                            <span class="link-text">TRENDING RECIPE</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>One popular Asian takeout is General Tso's chicken. Deep-fried pieces of chicken coated in a crunchy coating, then tossed in sweet sauce, served over rice. The sweet sauce is actually really simple to make if you have a couple of Asian cooking ingredients in your kitchen: hoisin sauce and rice vinegar. You could use apple cider vinegar. 
+                            To make this a quicker option, prepare the sauce in a skillet ahead of time and store it in a jar until you are ready to use it.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="side-link">
+                <a href="Srecipe.html" target="_blank">
+                    <img src="/images/summertime.jpg" alt="Must try summer recipes" width="250px" height="250px">
+                    <span class="link-text">3 Must Try Summer Recipes</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

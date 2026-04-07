@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Tips and Kitchen Hacks</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/tips.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+.flipper {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.flip-container.flip .flipper {
+    transform: rotateY(180deg);
+}
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.front {
+    background-color: #fff;
+}
+.back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+    padding-bottom: 20px;
+}
+h1 {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+}
+p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+}
+p:last-child {
+    border-bottom: none;
+}
+    </style>
+</head>
+<body>
+    <div class="flip-container" id="flip-container">
+        <div class="flipper">
+            <div class="front" onclick="toggleFlip()">
+                <h1>Cooking Tips:</h1>
+                <p>Preheat Your Pan: Always preheat your pan before adding ingredients to ensure even cooking.</p>
+                <p>Taste as You Go: Taste your dish as you cook and adjust seasoning as needed to achieve the desired flavor.</p>
+                <p>Pat Meat Dry: Patting meat dry before cooking helps it to brown better and prevents steaming.</p>
+                <p>Rest Meat After Cooking: Let meat rest for a few minutes after cooking to allow the juices to redistribute, resulting in juicier meat.</p>
+                <p>Use Fresh Herbs: Fresh herbs add brightness and flavor to dishes. Add them towards the end of cooking for maximum impact.</p>
+                <p>Balance Flavors: Balance flavors by incorporating sweet, salty, sour, and bitter elements in your dish.</p>
+                <p>Read the Recipe: Read the entire recipe before you start cooking to ensure you have all the ingredients and understand the steps.</p>
+                <p>Don't Crowd the Pan: Overcrowding the pan can cause ingredients to steam instead of brown. Cook in batches if necessary.</p>
+                <p>Mise en Place: Prepare all your ingredients before you start cooking (mise en place) to make the cooking process smoother.</p>
+            </div>
+            <div class="back" onclick="toggleFlip()">
+                <h1>Kitchen Hacks:</h1>
+                <p>Store Fresh Herbs in Water: Store fresh herbs like flowers in a glass of water in the fridge to keep them fresh longer.</p>
+                <p>Freeze Leftover Ingredients: Freeze leftover herbs, sauces, and stocks in ice cube trays for easy use in future recipes.</p>
+                <p>Keep Potatoes from Sprouting: Store potatoes with an apple to prevent them from sprouting.</p>
+                <p>Revive Stale Bread: Spritz stale bread with water and heat it in the oven to revive its freshness.</p>
+                <p>Use Citrus Zest: Use a microplane to zest citrus fruits and add bright flavor to dishes without adding extra liquid.</p>
+                <p>Keep Bananas Fresh: Wrap the stem of bananas in plastic wrap to extend their freshness.</p>
+                <p>Use Kitchen Shears: Kitchen shears are versatile tools for cutting herbs, trimming meat, and opening packages.</p>
+                <p>Prevent Boil-Overs: Place a wooden spoon across the top of a pot to prevent liquids from boiling over.</p>
+                <p>Use a Damp Towel Under Cutting Board: Place a damp towel under your cutting board to keep it from slipping while you chop.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFlip() {
+            var flipContainer = document.getElementById('flip-container');
+            flipContainer.classList.toggle('flip');
+        }
+    </script>
+</body>
+</html>
+              

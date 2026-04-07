@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/javascript/form_validation.js">
+</head>
+<body>
+    <div class="box">
+        <h1>Welcome!</h1>
+        <h2>Login</h2>
+        <form id="loginForm" action="Homepage.html" method="get" onsubmit="return validateForm()">
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" size="22" title="This field is required" required><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" size="22" title="This field is required" required><br />
+            <div class="login_button_box">
+                <button type="submit" class="login_button">Login</button>
+            </div>
+            <div class="remember-forgot">
+                <label for="rememberMe" class="remember-me">
+                    <input type="checkbox" id="rememberMe" name="rememberMe" value="RM"> Remember Me
+                </label>
+                <a href="LoginPage_ForgotPassword.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <br />
+            <div class="account-info">
+                <p>Don't have an account?</p>
+                <a href="REGISTRATION_PAGE.html" target="_blank" style="text-decoration: none;">Register Here!</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

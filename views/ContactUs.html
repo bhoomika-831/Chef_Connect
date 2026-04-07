@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/ContactUs.css">
+</head>
+<body>
+    <header>
+        <div class="home-button">
+            <a href="Homepage.html">Home</a>
+        </div>
+    </header>
+    <div class="contact-form">
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <form action="mailto::example@gmail.com" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="XXX xx xxx XXXX" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter text here..."></textarea>
+                
+                <fieldset>
+                    <legend>Type of Message:</legend>
+                    <label for="general">
+                        <input type="radio" name="message-type" id="general" value="general"> General
+                    </label>
+                    <label for="feedback">
+                        <input type="radio" name="message-type" id="feedback" value="feedback"> Feedback
+                    </label>
+                    <label for="question">
+                        <input type="radio" name="message-type" id="question" value="question"> Question
+                    </label>
+                </fieldset>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

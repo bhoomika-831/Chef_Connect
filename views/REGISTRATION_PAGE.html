@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION PAGE</title>
+    <link rel="stylesheet" href="/css/Registration.css">
+    <link rel="stylesheet" href="/javascript/form_validation.js">
+    <style>
+        #email-error,
+        #confirm-email-error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm" action="Successfully_registered.html" method="get" onsubmit="return formValidation()">
+            <table border="0">
+                <img src="images/Website_logo.jpeg" height="100" width="100">
+                <h3>Registration</h3>
+                <tr>
+                    <td><label for="firstname">First Name:</label><br />
+                    <input type="text" id="firstname" name="firstname" size="15" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name:</label><br />
+                    <input type="text" id="lastname" name="lastname" size="15" required></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label><br />
+                    <input type="text" id="username" name="username" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label><br />
+                    <input type="password" id="password" name="password" size="30" required> 
+                    <p>Minimum number of characters is 8</p></td>                  
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password:</label><br />
+                    <input type="password" id="confirm_password" name="confirm_password" size="30" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label><br />
+                    <input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm email">Confirm Email:</label><br />
+                    <input type="email" id="confirm_email" name="confirm_email" required></td>
+                </tr>
+            </table>
+            <br />
+            <div class="Terms">
+                <p>Welcome to Chef Connect! By accessing or using this website, you agree to the following terms and conditions
+                Please review these terms carefully before using our website.
+                If you do not accept these conditions, please do not use our website.</p>
+                <input type="checkbox" id="terms_checkbox" name="Terms and conditions" value="T&C" required>
+                <label for="terms_checkbox">I have read and accept the <a href="Terms_and_conditions.html" class="Terms" target="_blank">Terms & conditions</a></label>
+                <br />
+                <input type="checkbox" id="privacy" name="Privacy Policy" required>
+                <label for="terms_checkbox">I have read and accept the <a href="privacy_policy.html" class="Terms" target="_blank">Privacy Policy</a></label>
+                <br />
+            </div>
+            <div class="signup_button_box">
+                <button type="submit" class="signup_button">Sign Up</button>
+            </div>
+            <div class="existing-account">
+                <p>Already have an account?</p>
+                <a href="Login_Page.html" target="_blank" style="text-decoration: none;">Login here!</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

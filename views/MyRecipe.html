@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="/css/MyRecipe.css">
+</head>
+<body>
+    <h1>My Recipes</h1>
+    <div class="content">
+        <div class="sharedRecipes">
+            <h2>Shared Recipes</h2>
+            <div class="buttonContainer">
+                <button class="editDeleteButton" onclick="editRecipe()">
+                    <img src="/images/Edit_Icon.png" alt="EditIcon">
+                </button>
+                <button class="editDeleteButton" onclick="deleteRecipe()">
+                    <img src="/images/Delete_Icon.png" alt="DeleteIcon">
+                </button>
+            </div>
+        </div>
+        <div class="shareRecipe">
+            <h2>Add a Recipe</h2>
+            <form id="Recipeadded" action="success_recipe.html" method="get">
+                <input type="text" id="categoryName" placeholder="Category"><br />
+                <input type="text" id="recipeName" placeholder="Recipe Title"><br />
+                <input type="text" id="CookTime" placeholder="Cooking Time"><br />
+                <input type="text" id="serveSize" placeholder="Serving Size"><br />
+                <textarea id="recipeIngredients" rows="5" placeholder="Ingredients"></textarea><br />
+                <div class="instructions-file">
+                    <textarea id="recipeInstructions" rows="5" placeholder="Instructions"></textarea>
+                    <img src="/images/Upload_Icon.png" alt="UploadIcon" id="UploadIcon">
+                    <input type="file" id="myfile" name="myfile">
+                </div><br />
+                <a href="success_recipe.html"><button type="submit" id="addRecipe" name="AddRecipe">Add Recipe</button></a>
+            </form>
+        </div>
+    </div>
+    <script>
+    function editRecipe() {
+            console.log("Edit");
+        }
+        function deleteRecipe() {
+            console.log("Delete");
+        }
+
+        document.getElementById('UploadIcon').addEventListener('click',function() {
+            document.getElementById('myfile').click();
+        })
+
+        document.getElementById('myfile').addEventListener('change', function() {
+            fileName = this.files[0].name;
+            document.getElementById('recipeInstructions').value = fileName;
+        })
+    </script>
+</body>
+</html>

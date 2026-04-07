@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Recipe</title>
+    <link rel="stylesheet" href="/css/edit, delete.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Recipe</h1>
+        <form action="/updateRecipe" method="POST">
+            <label for="recipe_name">Recipe Name:</label>
+            <input type="text" id="recipe_name" name="recipe_name" value="{{ recipe_name }}" required>
+            
+            <label for="cooking_time">Cooking Time (minutes):</label>
+            <input type="text" id="cooking_time" name="cooking_time" value="{{ cooking_time }}" required>
+
+            <label for="serving_size">Serving Size:</label>
+            <input type="text" id="serving_size" name="serving_size" value="{{ serving_size }}" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" rows="6" required>{{ ingredients }}</textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" name="instructions" rows="10" required>{{ instructions }}</textarea>
+
+            <input type="hidden" name="recipe_id" value="{{ recipe_id }}">
+            
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</body>
+</html>
