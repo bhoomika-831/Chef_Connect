@@ -1,0 +1,21 @@
+{
+  "name": "chef-connect",
+  "version": "1.0.0",
+  "main": "chefconnect_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "formidable": "^3.5.1",
+    "lru-cache": "^10.2.2",
+    "mysql": "^2.18.1"
+  }
+}
