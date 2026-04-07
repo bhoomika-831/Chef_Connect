@@ -18,7 +18,7 @@ A full-stack recipe sharing and management web application where food enthusiast
 
 ---
 
-##Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
